@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover; 
+    background-image: linear-gradient(to bottom right, rgb(47, 46, 46), rgb(0, 0, 0));
+}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divContainer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.divContainer1 > p {
+    width: 50%;
+    color: white;
+    justify-content: flex-start;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 3px 3px 10px whitesmoke;
+}
+.divContainer1 > input {
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 50%;
+    font-size: 24px;
+    border-color: grey;
+    border-width: 2px;
+}
+.divContainer1 > input::placeholder {
+    font-size: 16px;
+    color: grey;
+}
+.divContainer1 > textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    font-size: 18px;
+    border-color: grey;
+    border-width: 2px;
+    resize: none;
+}
+
+.divContainer2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.divContainer2 > button {
+    width: 130px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(110, 250, 110);
+    color: white;
+    text-shadow: 3px 5px 10px black;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.divContainer2 > button:hover {
+    box-shadow: 5px 5px 10px grey;
+}
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card {
+    width: 350px;
+    height: 300px;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(214, 214, 214);
+    position: relative;
+}
+.titleTxt {
+    width: 100%;
+    color: rgb(31, 31, 31);
+    text-decoration: underline;
+    padding: 10px;
+    font-size: 22px;
+}
+.pTxt {
+    padding: 10px 5px;
+    text-align: justify;
+    font-size: 18px;
+    width: 100%;
+    overflow-y: scroll;
+}
+.divbtn2 {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+}
+.divbtn2 > button {
+    width: 130px;
+    padding: 10px;
+    margin: 0px 5px;
+    background-color: lightseagreen;
+    color: white;
+    text-shadow: 3px 5px 10px black;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.divbtn2 > button:hover {
+    box-shadow: 5px 5px 10px grey;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .divContainer1 > p {
+        width: 80%;
+    }
+    .divContainer1 > input {
+        width: 80%;
+    }
+    .divContainer1 > textarea {
+        width: 80%;
+    }
+    .divContainer2 {
+        width: 80%;
+    }
+}

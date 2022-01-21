@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <br><br>
+    <h1>Note Book</h1>
+    <br><br>
+    <section class="section1">
+        <div id="div1" class="divContainer1">
+            <p>Title:</p>
+            <input class="animate__animated animate__rubberBand" type="text" style="font-weight: bold;" id="title" placeholder="Enter Title   ...">
+            <p>Description:</p>
+            <textarea class="animate__animated animate__rubberBand" name="textarea" id="textarea" rows="8" placeholder="Note down here ..."></textarea>
+        </div>
+
+        <div id="div2" class="divContainer2">
+            <button onclick="addNote()">Add</button>
+            <button style="background-color: rgb(255, 38, 38);" onclick="deleteAll()">Delete All</button>
+        </div>
+    </section>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <section class="section2" id="cardContainer">
+
+    </section>
+</body>
+<script src="app.js"></script>
+
+</html>
